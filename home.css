@@ -1,0 +1,99 @@
+.hero {
+  height: calc(100vh - 60px);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 77px;
+  color: white;
+  margin-bottom: 1.1111rem;
+}
+
+.hero .text {
+  margin: 0 5%;
+}
+
+.hero p {
+  color: white;
+  width: 70%;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 38px;
+  margin-bottom: 1.7778rem;
+}
+
+.hero button {
+  width: 123px;
+  height: 40px;
+  background: #f9f4f4;
+  border-radius: 4px;
+  transition: 0.3s;
+  border: 1px solid white;
+}
+
+.hero button:hover {
+  background: var(--navyBlue);
+  color: white;
+}
+
+.photo {
+  margin: 0 5%;
+  flex: 1 0.5 550px;
+  display: flex;
+}
+
+.photo img {
+  width: 100%;
+  height: auto;
+}
+
+.hero-background {
+  height: calc(100vh - 60px);
+  width: 100%;
+  background-color: var(--navyBlue);
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+  position: absolute;
+  top: 60px;
+  z-index: 0;
+}
+
+/*-----Explore Section begins here-----*/
+
+.explore {
+  width: 100%;
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.explore h2 {
+  font-weight: 600;
+  font-size: 2.2222rem;
+  line-height: 2.6667rem;
+  text-align: center;
+  color: var(--navyBlue);
+}
+
+.explore h2 + span {
+  text-align: center;
+  color: var(--navyBlue);
+  margin-top: .5rem;
+}
+
+.service-grid {
+  margin-top: 2.7778rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5%;
+}
+
+.service-grid {
+  width: 100%;
+  height: auto;
+}

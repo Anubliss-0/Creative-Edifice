@@ -1,66 +1,84 @@
 <!DOCTYPE html>
-<html lang="en" lang="ned">
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- HTML Meta Tags -->
-    <title>Creative Edifice - Under Construction</title>
-    <meta name="description" content="Under construction, Come back soon!" />
-
-    <!-- Google / Search Engine Tags -->
-    <meta itemprop="name" content="Creative Edifice - Under Construction" />
-    <meta
-      itemprop="description"
-      content="Under construction, Come back soon!"
-    />
-    <meta
-      itemprop="image"
-      content="https://creativeedifice.com/Assets/Logo.jpg"
-    />
-
-    <!-- Facebook Meta Tags -->
-    <meta property="og:url" content="https://creativeedifice.com" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Creative Edifice - Under Construction" />
-    <meta
-      property="og:description"
-      content="Under construction, Come back soon!"
-    />
-    <meta
-      property="og:image"
-      content="https://creativeedifice.com/Assets/Logo.jpg"
-    />
-
-    <!-- Twitter Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta
-      name="twitter:title"
-      content="Creative Edifice - Under Construction"
-    />
-    <meta
-      name="twitter:description"
-      content="Under construction, Come back soon!"
-    />
-    <meta
-      name="twitter:image"
-      content="https://creativeedifice.com/Assets/Logo.jpg"
-    />
-
-    <!-- Meta Tags Generated via http://heymeta.com -->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="home.css" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700;600&display=swap"
       rel="stylesheet"
     />
   </head>
-
   <body>
-    <div class="container">
-      <img src="Assets/Logo.jpg" />
-      <h1>Under Construction / In Aanbouw</h1>
-      <p>Check back soon! / Kom snel terug!</p>
-    </div>
+    <nav>
+      <h2>Navigation</h2>
+      <div class="logo">
+        <svg
+          width="33"
+          height="40"
+          viewBox="0 0 33 40"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M9.21 34.27C7.81 34.27 6.58 34 5.52 33.46C4.46 32.9 3.63 32.12 3.03 31.12C2.45 30.1 2.16 28.93 2.16 27.61V19.36C2.16 18.06 2.45 16.91 3.03 15.91C3.63 14.91 4.46 14.14 5.52 13.6C6.58 13.04 7.81 12.76 9.21 12.76C10.61 12.76 11.84 13.03 12.9 13.57C13.96 14.11 14.78 14.87 15.36 15.85C15.96 16.83 16.26 17.96 16.26 19.24C16.26 19.42 16.13 19.53 15.87 19.57L14.52 19.66H14.43C14.35 19.66 14.28 19.64 14.22 19.6C14.16 19.56 14.13 19.52 14.13 19.48V19.3C14.13 17.88 13.68 16.75 12.78 15.91C11.88 15.05 10.69 14.62 9.21 14.62C7.73 14.62 6.54 15.05 5.64 15.91C4.74 16.77 4.29 17.9 4.29 19.3V27.7C4.29 29.1 4.74 30.23 5.64 31.09C6.54 31.95 7.73 32.38 9.21 32.38C10.69 32.38 11.88 31.96 12.78 31.12C13.68 30.26 14.13 29.12 14.13 27.7C14.13 27.46 14.26 27.35 14.52 27.37L15.87 27.43C16.13 27.43 16.26 27.48 16.26 27.58V27.73C16.26 29.03 15.96 30.18 15.36 31.18C14.78 32.16 13.96 32.92 12.9 33.46C11.84 34 10.61 34.27 9.21 34.27Z"
+            fill="white"
+          />
+          <path
+            d="M23.202 24.622C23.982 24.6047 24.6493 24.4313 25.204 24.102C25.776 23.7553 26.218 23.2787 26.53 22.672C26.5647 22.5853 26.6253 22.5247 26.712 22.49C26.7987 22.4553 26.8853 22.464 26.972 22.516L27.726 22.932C27.934 23.0533 27.986 23.2007 27.882 23.374C27.466 24.2407 26.842 24.934 26.01 25.454C25.178 25.9567 24.19 26.208 23.046 26.208C21.8327 26.208 20.81 25.922 19.978 25.35C19.146 24.778 18.548 23.9807 18.184 22.958C17.8547 22.0913 17.69 20.8953 17.69 19.37C17.69 18.6247 17.6987 18.0353 17.716 17.602C17.7507 17.1513 17.82 16.7353 17.924 16.354C18.2187 15.2273 18.808 14.326 19.692 13.65C20.5933 12.974 21.6767 12.636 22.942 12.636C24.45 12.636 25.6287 13.026 26.478 13.806C27.3447 14.586 27.8993 15.6867 28.142 17.108C28.246 17.6627 28.298 18.5293 28.298 19.708C28.298 19.9333 28.1853 20.046 27.96 20.046H19.64C19.5533 20.046 19.51 20.0893 19.51 20.176C19.51 21.0427 19.562 21.6753 19.666 22.074C19.8567 22.854 20.2553 23.478 20.862 23.946C21.486 24.3967 22.266 24.622 23.202 24.622ZM22.942 14.248C22.0753 14.248 21.3647 14.4733 20.81 14.924C20.2553 15.3573 19.8913 15.9467 19.718 16.692C19.614 17.0387 19.5447 17.628 19.51 18.46C19.51 18.5467 19.5533 18.59 19.64 18.59H26.322C26.4087 18.59 26.452 18.5467 26.452 18.46C26.4173 17.6973 26.3653 17.1427 26.296 16.796C26.1053 16.016 25.7153 15.4007 25.126 14.95C24.554 14.482 23.826 14.248 22.942 14.248Z"
+            fill="white"
+          />
+          <rect
+            x="1"
+            y="8"
+            width="31"
+            height="31"
+            rx="3"
+            stroke="white"
+            stroke-width="2"
+          />
+          <line x1="18" y1="30.5" x2="29" y2="30.5" stroke="white" />
+        </svg>
+        <span>Creative Edifice</span>
+      </div>
+      <ul>
+        <li>Home</li>
+        <li>Services</li>
+        <li>About</li>
+        <li>Blog</li>
+      </ul>
+      <button>Contact me</button>
+    </nav>
+    <section class="hero">
+      <div class="text">
+        <h1>We help you grow your maritime company</h1>
+        <p>
+          We help you to navigate the world of potential in your martine based
+          company
+        </p>
+        <button>Learn more</button>
+      </div>
+      <div class="photo">
+        <img src="Assets\Hero_photo.png" />
+      </div>
+    </section>
+
+    <section class="explore">
+      <h2>Explore how we can help you</h2>
+      <span>The ultimate help for your company</span>
+      <div class="home-services">
+        <div class="service-grid">
+          <div><img src="Assets/Coaching.png"><span></span></div>
+          <div><img src="Assets/Consulting.png"></div>
+          <div><img src="Assets/Workshops.png"></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="hero-background"></div>
   </body>
 </html>
