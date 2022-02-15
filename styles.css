@@ -1,21 +1,32 @@
 :root {
     --navyBlue:#0F2852;
+    
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 18px;
+    font-size: 100%;
     z-index: 1;
 }
 
 html {
     font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+    overflow-x: hidden;
 }
 
 body {
     width: 100%;
+    position: relative;
+}
+
+.container {
+    max-width: 1440px;
+    margin:auto;
+    position: relative;
+    top: 60px;
 }
 
 /*-----Desktop Navigation Section-----*/
@@ -27,6 +38,8 @@ nav {
     align-items: center;
     color: hsla(0, 0%, 100%, 0.8);
     height: 60px;
+    position: fixed;
+    z-index: 3;
 }
 
 nav h2 {
@@ -37,7 +50,7 @@ nav ul {
     display: flex;
     justify-content: space-between;
     width: 400px;
-    margin-right: 5%;
+    
 }
 
 nav li {
@@ -77,5 +90,51 @@ nav button:hover {
     
 }
 
+footer {
+    display: grid;
+    position: relative;
+    top: 10px;
+    gap: .5556rem;
+    height: 250px;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: var(--navyBlue);
+    color: white;
+    padding: 1.1111rem 5.5556rem;
+    font-weight: 300;
+    margin-top: 1.1111rem;
+}
+
+footer div {
+    justify-self: center;
+    align-self: baseline;    
+}
+
+footer div:last-child {
+    align-self: center;
+}
+
+footer p {
+    margin: 1.1111rem 0;
+}
+
+footer li {
+    list-style: none;
+    margin-bottom: .4000rem;
+}
+
+footer h3 {
+    font-weight: 600;
+font-size: 36px;
+line-height: 43px;
+margin-bottom: 1.1111rem;
+}
+
+footer h2 {
+    display: none;
+}
+
+footer i {
+    font-size: 150%;
+}
 
 /*-----site wide styles-----*/
