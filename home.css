@@ -109,6 +109,36 @@ h2 + span {
   .hero .photo {
     display: none;
   }
+
+  .hero .text {
+    height: calc(100vh - 60px);
+    justify-content: center;
+    
+  }
+
+  @media (max-height: 850px) {
+    .hero-background {
+      height: calc(100vh - 60px);
+      width: 100%;
+      background-color: var(--navyBlue);
+      clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+      position: absolute;
+      top: 60px;
+      z-index: 0;
+    }
+
+    @media (max-height: 670px) {
+      .hero-background {
+        height: calc(100vh - 60px);
+        width: 100%;
+        background-color: var(--navyBlue);
+        clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
+        position: absolute;
+        top: 60px;
+        z-index: 0;
+      }
+    }
+  }
   
 }
 
