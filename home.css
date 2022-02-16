@@ -106,11 +106,10 @@ h2 + span {
     font-size: 50px;
     line-height: 52px;
   }
-
   .hero .photo {
-    position: relative;
-    top: 2.7778rem;
+    display: none;
   }
+  
 }
 
 /*-----Explore Section begins here-----*/
@@ -172,6 +171,9 @@ h2 + span {
 }
 
 @media (max-width:900px) {
+  .explore {
+    margin-top: 20%;
+  }
   .service-grid {
     grid-template-columns: 70%;
     margin: 0 70px;
