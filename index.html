@@ -46,11 +46,17 @@
         </svg>
         <span>Creative Edifice</span>
       </div>
-      <ul>
+      <div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fas fa-bars"></i>
+    </div>
+    </a>
+      <ul id="myLinks">
         <li>Home</li>
         <li>Services</li>
         <li>About</li>
         <li>Blog</li>
+        <li id="contact">Contact</li>
       </ul>
       <button>Contact me</button>
     </nav>
@@ -65,7 +71,7 @@
           <button>Learn more</button>
         </div>
         <div class="photo">
-          <img src="Assets\Hero_photo.png" />
+          <img src="Assets\Hero_photo.png" />          
         </div>
       </section>
 
@@ -1226,6 +1232,15 @@
         <span>Creative Edifice</span>
       </div>
     </footer>
-    
+    <script>
+      function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+} 
+    </script>
   </body>
 </html>
