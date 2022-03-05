@@ -36,7 +36,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: hsla(0, 0%, 100%, 0.8);
+    color: hsla(0, 0%, 100%, 1);
     height: 60px;
     position: fixed;
     z-index: 3;
@@ -56,11 +56,38 @@ nav ul {
 nav li {
     list-style: none;
     transition: 0.3s;
+    display: block;
+    }
+
+nav li::after {
+    content: '';
+    height: 3px;
+    background-color: white;    
+    width: 70px;
+    position: absolute;
+    bottom: 13px;
+    display: block;
+    transform: scaleX(0);
+    transition: transform 0.25s linear;
+    transform-origin: bottom right;
 }
 
-nav li:hover {
-    color: hsla(0, 0%, 100%, 1)
+nav li:hover::after {
+    transform: scaleX(1);
+    transition: transform 0.25s linear;
+    transform-origin: bottom left;
+    
 }
+/*CHANGE THIS TO LINKS WHEN THEY ARE READY*/
+li:hover {
+    cursor: pointer;
+}
+button:hover {
+    cursor: pointer;
+}
+
+button
+
 
 #contact {
     display: none;
