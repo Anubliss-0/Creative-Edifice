@@ -1,5 +1,6 @@
 :root {
-    --navyBlue:#0F2852;
+    --navyBlue:#2253de;
+    --darkblue:#0F2852;
     
 }
 
@@ -62,7 +63,7 @@ nav li {
 nav li::after {
     content: '';
     height: 3px;
-    background-color: white;    
+    background-color: lightseagreen;    
     width: 70px;
     position: absolute;
     bottom: 13px;
@@ -93,15 +94,15 @@ button
     display: none;
 }
 
-.logo svg {
-    margin-bottom: 10px;
-    margin-left: 20px;
-    margin-right: 10px;
+.logo img {
+    width: 100%;
 }
 
 .logo {
     display: flex;
     align-items: center;    
+    width: 160px;
+    margin-left: 1.3333rem;
 }
 
 nav button {
@@ -194,10 +195,16 @@ footer div {
     justify-self: center;
     align-self: baseline;    
 }
+
+footer div:last-child img {
+    width: 60%;
+}
+
 @media (min-width:900px){
 footer div:last-child {
     align-self: center;
 }
+
 }
 
 footer p {
@@ -273,6 +280,7 @@ footer div:nth-child(4) ul li:nth-child(2) {
 
     footer div:nth-child(2) {
         order: 2;
+        padding-top: 10px;
     }
 
     footer div:nth-child(4) {
@@ -280,10 +288,17 @@ footer div:nth-child(4) ul li:nth-child(2) {
     }
 
     
-
     footer div:nth-child(5) {
         order: 3;
+        padding-top: 0px;
+        display: flex;
+        justify-content: center;
     }
+
+    footer div:last-child img {
+        width: 40%;
+    }
+    
 }
 
 /*-----site wide styles-----*/
