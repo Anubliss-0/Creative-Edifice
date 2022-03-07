@@ -95,14 +95,15 @@ button
 }
 
 .logo img {
-    width: 100%;
+    width: 95%;
 }
 
 .logo {
     display: flex;
     align-items: center;    
-    width: 160px;
-    margin-left: 1.3333rem;
+    width: 190px;
+    background-color: white;
+    clip-path: polygon(0 0, 100% 0, 82% 100%, 0% 100%);
 }
 
 nav button {
@@ -128,7 +129,7 @@ nav .fa-bars {
 
 @media (max-width: 800px) {
     nav {
-        height: 60px;
+        height: 64px;
         display: block;
         justify-content: space-between;
     }
@@ -159,9 +160,8 @@ nav .fa-bars {
         display: none;
     }
 
-    nav .logo {
-        position: absolute;
-        top: 5px;
+    nav .logo img {
+        width: 100%;
     }
 
     #myLinks {

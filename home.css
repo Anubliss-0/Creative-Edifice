@@ -274,7 +274,7 @@ h2 + span {
   margin-top: 5%;
 }
 
-#grow span:first-of-type {
+#grow .grow-span{
   font-size: 1.5rem;
   margin: 1.1111rem 2.2222rem;
 }
@@ -296,7 +296,7 @@ h2 + span {
   line-height: 43px;
   text-align: center;
   color: var(--darkblue);
-  left: 35%;
+  left: 40%;
   top: 15%;
 }
 
