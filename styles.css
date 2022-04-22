@@ -12,10 +12,12 @@
     z-index: 1;
 }
 
+
 html {
     font-family: 'Barlow', sans-serif;
     font-size: 18px;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -28,6 +30,11 @@ body {
     margin:auto;
     position: relative;
     top: 60px;
+}
+
+a {
+    text-decoration: none;
+    color: hsla(0, 0%, 100%, 1);
 }
 
 /*-----Desktop Navigation Section-----*/
@@ -59,11 +66,11 @@ nav li {
     transition: 0.3s;
     display: block;
     }
-
-nav li::after {
+@media (min-width:800px){
+    nav li::after {
     content: '';
     height: 3px;
-    background-color: lightseagreen;    
+    background-color: #20b2aa;    
     width: 70px;
     position: absolute;
     bottom: 13px;
@@ -71,6 +78,22 @@ nav li::after {
     transform: scaleX(0);
     transition: transform 0.25s linear;
     transform-origin: bottom right;
+}
+
+nav li:nth-of-type(1)::after {
+    width: 50px;
+}
+
+nav li:nth-of-type(2)::after {
+    width: 50px;
+}
+
+nav li:nth-of-type(4)::after {
+    width: 40px;
+}
+
+nav li:nth-of-type(5)::after {
+    width: 65px;
 }
 
 nav li:hover::after {
@@ -86,6 +109,8 @@ li:hover {
 button:hover {
     cursor: pointer;
 }
+}
+
 
 button
 
