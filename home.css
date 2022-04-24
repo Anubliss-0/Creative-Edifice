@@ -271,7 +271,7 @@ h2 + span {
 }
 
 .grid2 {
-  background-image: url(Assets/grid1.png);
+  background-image: url(Assets/grid2.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -281,7 +281,7 @@ h2 + span {
 }
 
 .grid3 {
-  background-image: url(Assets/grid1.png);
+  background-image: url(Assets/grid3.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -345,7 +345,6 @@ h2 + span {
 #quote {
   width: 100%;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 2.7778rem; 
 }
@@ -355,59 +354,141 @@ h2 + span {
   height: auto;
 }
 
-.quote-container p {
-  animation-name: fadein;
-  animation-duration: 8s;  
-  opacity: 0%;
-}
 
-@keyframes fadein {
+/*ANIMATION */
+.q1 {
+  animation-name: fadein1;
+  animation-duration: 100s;  
+  animation-iteration-count: infinite;  
+}
+@keyframes fadein1 {
   0% {
-    opacity: 0%;
+    opacity: 0;
   }
-  20% {
-    opacity: 100%;
+  5% {
+    opacity: 1;
   }
-  50% {
-    opacity: 100%;
+  10% {
+    opacity: 1;
   }
-  70% {
-    opacity: 100%;
-  }
-  100% {
-    opacity: 0%;
+  15% {
+    opacity: 0;
   }
 }
 
 .q2 {
-  animation-delay: 8s;
+  animation-name: fadein2;
+  animation-duration: 100s;
+  animation-iteration-count: infinite;
+}
+@keyframes fadein2 {
+  15% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
 }
 
 .q3 {
-  animation-delay: 16s;
+  animation-name: fadein3;
+  animation-duration: 100s;
+  animation-iteration-count: infinite;
+}
+@keyframes fadein3 {
+  30% {
+    opacity: 0;
+  }
+  35% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 0;
+  }
 }
 
 .q4 {
-  animation-delay: 24s;
+  animation-name: fadein4;
+  animation-duration: 100s;
+  animation-iteration-count: infinite;
+}
+@keyframes fadein4 {
+  45% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  55% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
 }
 
 .q5 {
-  animation-delay: 32s;
+  animation-name: fadein5;
+  animation-duration: 100s;
+  animation-iteration-count: infinite;
+}
+@keyframes fadein5 {
+  60% {
+    opacity: 0;
+  }
+  65% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }  
 }
 
 .q6 {
-  animation-delay: 40s;
+  animation-name: fadein6;
+  animation-duration: 100s;
+  animation-iteration-count: infinite;
+}
+@keyframes fadein6 {
+  75% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 0;
+  }
 }
 
-.q7 {
-  animation-delay: 48s;
+.quote-container {
+  position: relative;
+  width: 40%;  
+  margin-left: 10%;
 }
-/*-----Start building the animation box here-----
+
 .quote-container p {
-  ;
-  
+  position: absolute;
+  bottom: 0px;
+  font-size: 2rem;
+  opacity: 0;
 }
-*/
+
 .quote-background {
   clip-path: polygon(0 9%, 100% 0, 100% 100%, 0% 100%);
   position: absolute;
@@ -425,11 +506,24 @@ h2 + span {
 
   #quote {
     margin-bottom: 4rem;
+    justify-content: center;
   }
 
   .quote-background {
     height: 33.3333rem;
     bottom: 0%;
+  }
+
+  .quote-container {
+    width: 90%;
+    text-align: center;
+    margin: 5% 0%;
+  }
+}
+
+@media (max-width: 560px) {
+  #quote {
+    padding-top: 35%;
   }
 }
 
