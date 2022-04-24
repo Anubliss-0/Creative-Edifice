@@ -107,7 +107,7 @@ h2 + span {
 
   .hero .text {
     height: calc(100vh - 60px);
-    justify-content: center;
+    justify-content: start;
   }
 }
 
