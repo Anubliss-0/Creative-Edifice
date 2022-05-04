@@ -58,6 +58,7 @@ main {
 
 .service:hover {
   transform: scale(1.02);
+  cursor: pointer;
 }
 
 .service span:first-of-type {
@@ -111,6 +112,11 @@ main {
 }
 
 #second {
+    display: none;
+    opacity: 0;
+}
+
+#third {
     display: none;
     opacity: 0;
 }
