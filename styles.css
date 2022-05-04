@@ -205,8 +205,8 @@ nav .fa-bars {
 
 footer {
     display: grid;
-    position: relative;
-    top: 10px;
+    
+    
     gap: .5556rem;
     height: 250px;
     grid-template-columns: repeat(4, 1fr);

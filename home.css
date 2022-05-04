@@ -111,83 +111,7 @@ h2 + span {
   }
 }
 
-/*-----Explore Section begins here-----*/
-/* Breakpoint for iPad is 900px*/
 
-.explore {
-  width: 100%;
-  margin-top: 5%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.home-services {
-  width: 90%;
-}
-
-.service-grid {
-  margin-top: 2.7778rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 2%;
-}
-
-.service-grid {
-  width: 100%;
-  height: auto;
-}
-
-.service-grid img {
-  width: 100%;
-  height: auto;
-}
-
-.service {
-  transition: 0.3s;
-}
-
-.service:hover {
-  transform: scale(1.02);
-}
-
-.service span:first-of-type {
-  position: relative;
-  bottom: 28%;
-  left: 10%;
-  color: white;
-  font-weight: 600;
-  font-size: 2vw;
-}
-
-.service span:last-of-type {
-  display: block;
-  position: relative;
-  bottom: 28%;
-  left: 10%;
-  color: white;
-  font-size: 1.3vw;
-}
-
-@media (max-width: 900px) {
-  .explore {
-    margin-top: 20%;
-  }
-  .service-grid {
-    grid-template-columns: 70%;
-    margin: 0 70px;
-    justify-content: center;
-    margin-bottom: 10%;
-    margin-top: 1.1111rem;
-    gap: 0%;
-  }
-  .service span:first-of-type {
-    font-size: 7vw;
-  }
-  .service span:last-of-type {
-    font-size: 4vw;
-  }
-}
 
 /*-----Philosophy section-----*/
 #philosophy {
@@ -525,6 +449,12 @@ h2 + span {
   #quote {
     padding-top: 35%;
   }
+}
+
+/*page footer settings*/
+footer {
+  position: relative;
+  top: 10px;
 }
 
 /*Hero background screen size settings */

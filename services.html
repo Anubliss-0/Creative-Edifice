@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="services.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <script src="https://kit.fontawesome.com/d30cb101d5.js" crossorigin="anonymous"></script>
+
+    <!--Metadata beings here-->
+    <!-- HTML Meta Tags -->
+    <title>Creative Edifice</title>
+    <meta name="description"
+        content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
+
+    <!-- Google / Search Engine Tags -->
+    <meta itemprop="name" content="Creative Edifice">
+    <meta itemprop="description"
+        content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
+    <meta itemprop="image"
+        content="https://raw.githubusercontent.com/Anubliss-0/Creative-Edifice/Development/Assets/Creative%20Edifice%20Logo%20COLOR.jpg">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://anubliss-0.github.io/Creative-Edifice">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Creative Edifice">
+    <meta property="og:description"
+        content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
+    <meta property="og:image"
+        content="https://raw.githubusercontent.com/Anubliss-0/Creative-Edifice/Development/Assets/Creative%20Edifice%20Logo%20COLOR.jpg">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Creative Edifice">
+    <meta name="twitter:description"
+        content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
+    <meta name="twitter:image"
+        content="https://raw.githubusercontent.com/Anubliss-0/Creative-Edifice/Development/Assets/Creative%20Edifice%20Logo%20COLOR.jpg">
+
+    <!-- Meta Tags Generated via http://heymeta.com -->
+</head>
+
+
+<body>
+    <nav>
+        <h2>Navigation</h2>
+        <div class="logo">
+            <img src="Assets/nav-logo.png">
+        </div>
+        <div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fas fa-bars"></i>
+        </div>
+        </a>
+        <ul id="myLinks">
+            <a href="index.html"><li>Home</li></a>
+            <li>About</li>
+            <li><a href="#grow">Services</a></li>
+            <li>Blog</li>
+            <li id="contact">Contact</li>
+        </ul>
+        <button>Contact me</button>
+    </nav>
+    
+
+    <main>
+        <section class="explore">
+            <div id="title">
+            <h1>Services</h2>
+            <span>Select a service to find out more.</span>
+        </div>
+
+
+            <div class="service-grid" id="photos">
+                <div class="service" onclick="hidePhoto(); setTimeout(displayNone, 500); setTimeout(displayFirst, 500); setTimeout(revealFirst, 1000)">
+                    <img src="Assets/Coaching.png" /><span>Coaching</span><span>The ultimate help for your
+                        company</span>
+                </div>
+                <div class="service" onclick="hidePhoto(); setTimeout(displayNone, 500); setTimeout(displaySecond, 500); setTimeout(revealSecond, 1000)">
+                    <img src="Assets/Consulting.png" /><span>Consulting</span><span>The ultimate help for your
+                        company</span>
+                </div>
+                <div class="service" onclick="hidePhoto(); setTimeout(displayNone, 500); setTimeout(displayThird, 500); setTimeout(revealThird, 1000)">
+                    <img src="Assets/Workshops.png" /><span>Workshops</span><span>The ultimate help for your
+                        company</span>
+                </div>
+            </div>
+
+            <div id="first" class="text">
+                <h2>Coaching</h2><br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Egestas erat imperdiet sed euismod nisi. Neque gravida in fermentum et
+                    sollicitudin ac. Malesuada bibendum arcu vitae elementum curabitur vitae nunc. A diam sollicitudin
+                    tempor id eu nisl. Viverra aliquet eget sit amet tellus cras adipiscing enim. Egestas diam in arcu
+                    cursus euismod quis viverra nibh cras. Magna sit amet purus gravida. Hendrerit gravida rutrum
+                    quisque non tellus orci. Sit amet massa vitae tortor condimentum. Ac turpis egestas maecenas
+                    pharetra convallis posuere morbi. Sociis natoque penatibus et magnis dis parturient. In hendrerit
+                    gravida rutrum quisque non. Elementum curabitur vitae nunc sed. Fermentum dui faucibus in ornare.
+                    Elementum curabitur vitae nunc sed velit dignissim sodales ut. Faucibus turpis in eu mi bibendum
+                    neque egestas congue quisque. Id semper risus in hendrerit gravida rutrum.<br><br>
+
+                    Turpis egestas maecenas pharetra convallis posuere morbi leo. Lorem dolor sed viverra ipsum nunc. Et
+                    netus et malesuada fames ac turpis egestas sed. Dignissim cras tincidunt lobortis feugiat vivamus at
+                    augue.</p><br>
+                    <button class="back" onclick="hideFirst(); setTimeout(displayNoneFirst, 500); setTimeout(displayPhoto,500); setTimeout(revealPhoto, 1000)">Back</button>
+            </div>
+
+            <div id="second" class="text">
+                <h2>Consulting</h2><br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Egestas erat imperdiet sed euismod nisi. Neque gravida in fermentum et
+                    sollicitudin ac. Malesuada bibendum arcu vitae elementum curabitur vitae nunc. A diam sollicitudin
+                    tempor id eu nisl. Viverra aliquet eget sit amet tellus cras adipiscing enim. Egestas diam in arcu
+                    cursus euismod quis viverra nibh cras. Magna sit amet purus gravida. Hendrerit gravida rutrum
+                    quisque non tellus orci. Sit amet massa vitae tortor condimentum. Ac turpis egestas maecenas
+                    pharetra convallis posuere morbi. Sociis natoque penatibus et magnis dis parturient. In hendrerit
+                    gravida rutrum quisque non. Elementum curabitur vitae nunc sed. Fermentum dui faucibus in ornare.
+                    Elementum curabitur vitae nunc sed velit dignissim sodales ut. Faucibus turpis in eu mi bibendum
+                    neque egestas congue quisque. Id semper risus in hendrerit gravida rutrum.<br><br>
+
+                    Turpis egestas maecenas pharetra convallis posuere morbi leo. Lorem dolor sed viverra ipsum nunc. Et
+                    netus et malesuada fames ac turpis egestas sed. Dignissim cras tincidunt lobortis feugiat vivamus at
+                    augue.</p><br>
+                    <button class="back" onclick="hideSecond(); setTimeout(displayNoneSecond, 500); setTimeout(displayPhoto,500); setTimeout(revealPhoto, 1000)">Back</button>
+            </div>
+
+            <div id="third" class="text">
+                <h2>Workshops</h2><br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Egestas erat imperdiet sed euismod nisi. Neque gravida in fermentum et
+                    sollicitudin ac. Malesuada bibendum arcu vitae elementum curabitur vitae nunc. A diam sollicitudin
+                    tempor id eu nisl. Viverra aliquet eget sit amet tellus cras adipiscing enim. Egestas diam in arcu
+                    cursus euismod quis viverra nibh cras. Magna sit amet purus gravida. Hendrerit gravida rutrum
+                    quisque non tellus orci. Sit amet massa vitae tortor condimentum. Ac turpis egestas maecenas
+                    pharetra convallis posuere morbi. Sociis natoque penatibus et magnis dis parturient. In hendrerit
+                    gravida rutrum quisque non. Elementum curabitur vitae nunc sed. Fermentum dui faucibus in ornare.
+                    Elementum curabitur vitae nunc sed velit dignissim sodales ut. Faucibus turpis in eu mi bibendum
+                    neque egestas congue quisque. Id semper risus in hendrerit gravida rutrum.<br><br>
+
+                    Turpis egestas maecenas pharetra convallis posuere morbi leo. Lorem dolor sed viverra ipsum nunc. Et
+                    netus et malesuada fames ac turpis egestas sed. Dignissim cras tincidunt lobortis feugiat vivamus at
+                    augue.</p><br>
+                    <button class="back" onclick="hideThird(); setTimeout(displayNoneThird, 500); setTimeout(displayPhoto,500); setTimeout(revealPhoto, 1000)">Back</button>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <h2>footer</h2>
+        <div>
+            <h3>Contact</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-linkedin"></i>
+        </div>
+        <div>
+            <h3>Explore</h3>
+            <ul>
+                <li>Home</li>
+                <li>Services</li>
+                <li>About us</li>
+                <li>Workshops</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Language</h3>
+            <ul>
+                <li>English</li>
+                <li>Dutch</li>
+            </ul>
+        </div>
+        <div>
+            <img src="Assets/Creative Edifice Logos ALL_Tekengebied 1 kopie 10.png">
+        </div>
+    </footer>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        } 
+    </script>
+
+    <script>
+        var photos = document.getElementById("photos");        
+        var first = document.getElementById("first");
+        var second = document.getElementById("second");
+        var third = document.getElementById("third");
+        var title = document.getElementById("title");
+       
+
+        /*----Hide photos, reveal text----*/
+        function hidePhoto() {
+            photos.style.opacity = "0";
+            title.style.opacity = "0";
+        }
+        function displayNone() {
+            photos.style.display = "none";
+            title.style.display = "none";
+        }
+        /*first*/
+        function displayFirst() {
+            first.style.display = "block";            
+        }
+        function revealFirst() {
+            first.style.opacity = "1"
+        }
+        /*Second*/
+        function displaySecond() {
+            second.style.display = "block";            
+        }
+        function revealSecond() {
+            second.style.opacity = "1"
+        }
+        /*Third*/
+        function displayThird() {
+            third.style.display = "block";            
+        }
+        function revealThird() {
+            third.style.opacity = "1"
+        }
+
+        /*----hide text, reveal photos----*/
+        function displayPhoto() {
+            photos.style.display = "grid";
+            title.style.display = "block";
+        }
+        function revealPhoto() {
+            photos.style.opacity = "1";
+            title.style.opacity = "1";
+        }
+        /*First*/
+        function hideFirst() {
+            first.style.opacity = "0";
+        }
+        function displayNoneFirst() {
+            first.style.display = "none";
+        }
+        /*second*/
+        function hideSecond() {
+            second.style.opacity = "0";
+        }
+        function displayNoneSecond() {
+            second.style.display = "none";
+        }
+        /*Third*/
+        function hideThird() {
+            third.style.opacity = "0";
+        }
+        function displayNoneThird() {
+            third.style.display = "none";
+        }
+    </script>
+</body>
