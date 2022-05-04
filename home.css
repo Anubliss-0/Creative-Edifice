@@ -543,3 +543,9 @@ h2 + span {
     height: 750px;
   }
 }
+
+@media (max-height: 670px) {
+  .hero-background {
+    height: 600px;
+  }
+}
