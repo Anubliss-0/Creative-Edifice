@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="nl">
 
 <head>
     <meta charset="UTF-8" />
@@ -54,42 +54,45 @@
     <nav>
         <h2>Navigation</h2>
         <div class="logo">
-            <img src="Assets/nav-logo.png">
+          <img src="Assets/nav-logo.png">
         </div>
         <div>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fas fa-bars"></i>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fas fa-bars"></i>
         </div>
         </a>
         <ul id="myLinks">
-            <a href="index.html"><li>Home</li></a>
-            <li>About</li>
-            <li><a href="#grow">Services</a></li>
-            <li>Blog</li>
-            <li id="contact">Contact</li>
+          <li><a href="index.html">Startpagina</a></li>
+          <li><a href="about.html">Over</a></li>
+          <li><a href="services.html">Diensten</a></li>
+          <li>Blog</li>
+          <li id="contact">Contact</li>
         </ul>
-        <button>Contact me</button>
-    </nav>
-    
+        <button>Contact mij</button>
+      </nav>
+
 
     <main>
         <section class="explore">
             <div id="title">
-            <h1>Services</h2>
-            <span>Select a service to find out more.</span>
-        </div>
+                <h1>Diensten</h2>
+                    <span>Ontdek wat wij voor uw bedrijf kunnen doen.</span>
+            </div>
 
 
             <div class="service-grid" id="photos">
-                <div class="service" onclick="hidePhoto(); setTimeout(displayNone, 500); setTimeout(displayFirst, 500); setTimeout(revealFirst, 1000); window.scrollTo(0, 0)">
+                <div class="service"
+                    onclick="hidePhoto(); setTimeout(displayNone, 500); setTimeout(displayFirst, 500); setTimeout(revealFirst, 1000); setTimeout(scrollBack, 1000)">
                     <img src="Assets/Coaching.png" /><span>Coaching</span><span>The ultimate help for your
                         company</span>
                 </div>
-                <div class="service" onclick="hidePhoto(); setTimeout(displayNone, 500); setTimeout(displaySecond, 500); setTimeout(revealSecond, 1000); window.scrollTo(0, 0)">
+                <div class="service"
+                    onclick="hidePhoto(); setTimeout(displayNone, 500); setTimeout(displaySecond, 500); setTimeout(revealSecond, 1000); setTimeout(scrollBack, 1000)">
                     <img src="Assets/Consulting.png" /><span>Consulting</span><span>The ultimate help for your
                         company</span>
                 </div>
-                <div class="service" onclick="hidePhoto(); setTimeout(displayNone, 500); setTimeout(displayThird, 500); setTimeout(revealThird, 1000); window.scrollTo(0, 0)">
+                <div class="service"
+                    onclick="hidePhoto(); setTimeout(displayNone, 500); setTimeout(displayThird, 500); setTimeout(revealThird, 1000); setTimeout(scrollBack, 1000)">
                     <img src="Assets/Workshops.png" /><span>Workshops</span><span>The ultimate help for your
                         company</span>
                 </div>
@@ -111,7 +114,8 @@
                     Turpis egestas maecenas pharetra convallis posuere morbi leo. Lorem dolor sed viverra ipsum nunc. Et
                     netus et malesuada fames ac turpis egestas sed. Dignissim cras tincidunt lobortis feugiat vivamus at
                     augue.</p><br>
-                    <button class="back" onclick="hideFirst(); setTimeout(displayNoneFirst, 500); setTimeout(displayPhoto,500); setTimeout(revealPhoto, 1000); window.scrollTo(0, 0)">Back</button>
+                <button class="back"
+                    onclick="hideFirst(); setTimeout(displayNoneFirst, 500); setTimeout(displayPhoto,500); setTimeout(revealPhoto, 1000); setTimeout(scrollBack, 1000)">Terug</button>
             </div>
 
             <div id="second" class="text">
@@ -130,7 +134,8 @@
                     Turpis egestas maecenas pharetra convallis posuere morbi leo. Lorem dolor sed viverra ipsum nunc. Et
                     netus et malesuada fames ac turpis egestas sed. Dignissim cras tincidunt lobortis feugiat vivamus at
                     augue.</p><br>
-                    <button class="back" onclick="hideSecond(); setTimeout(displayNoneSecond, 500); setTimeout(displayPhoto,500); setTimeout(revealPhoto, 1000); window.scrollTo(0, 0)">Back</button>
+                <button class="back"
+                    onclick="hideSecond(); setTimeout(displayNoneSecond, 500); setTimeout(displayPhoto,500); setTimeout(revealPhoto, 1000); setTimeout(scrollBack, 1000)">Terug</button>
             </div>
 
             <div id="third" class="text">
@@ -149,41 +154,42 @@
                     Turpis egestas maecenas pharetra convallis posuere morbi leo. Lorem dolor sed viverra ipsum nunc. Et
                     netus et malesuada fames ac turpis egestas sed. Dignissim cras tincidunt lobortis feugiat vivamus at
                     augue.</p><br>
-                    <button class="back" onclick="hideThird(); setTimeout(displayNoneThird, 500); setTimeout(displayPhoto,500); setTimeout(revealPhoto, 1000); window.scrollTo(0, 0)">Back</button>
+                <button class="back"
+                    onclick="hideThird(); setTimeout(displayNoneThird, 500); setTimeout(displayPhoto,500); setTimeout(revealPhoto, 1000); setTimeout(scrollBack, 1000)">Terug</button>
             </div>
 
         </section>
     </main>
-
+    
     <footer>
         <h2>footer</h2>
         <div>
-            <h3>Contact</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <i class="fab fa-facebook-square"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-linkedin"></i>
+          <h3>Contact</h3>
+          <a><p>contact opnemen</p></a>
+          <i class="fab fa-facebook-square"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-linkedin"></i>
         </div>
         <div>
-            <h3>Explore</h3>
-            <ul>
-                <li>Home</li>
-                <li>Services</li>
-                <li>About us</li>
-                <li>Workshops</li>
-            </ul>
+          <h3>Ontdek</h3>
+          <ul>
+            <a href="index.html"><li>Startpagina</li></a>
+            <a href="about.html"><li>Over</li></a>
+            <a href="services.html"><li>Diensten</li></a>
+            <li>Blog</li>
+          </ul>
         </div>
         <div>
-            <h3>Language</h3>
-            <ul>
-                <li>English</li>
-                <li>Dutch</li>
-            </ul>
+          <h3>Taal</h3>
+          <ul>
+            <li>Nederlands</li>
+            <li>English</li>
+          </ul>
         </div>
         <div>
-            <img src="Assets/Creative Edifice Logos ALL_Tekengebied 1 kopie 10.png">
+          <img src="Assets/Creative Edifice Logos ALL_Tekengebied 1 kopie 10.png">
         </div>
-    </footer>
+      </footer>
     <script>
         function myFunction() {
             var x = document.getElementById("myLinks");
@@ -196,12 +202,12 @@
     </script>
 
     <script>
-        var photos = document.getElementById("photos");        
+        var photos = document.getElementById("photos");
         var first = document.getElementById("first");
         var second = document.getElementById("second");
         var third = document.getElementById("third");
         var title = document.getElementById("title");
-       
+
 
         /*----Hide photos, reveal text----*/
         function hidePhoto() {
@@ -214,21 +220,21 @@
         }
         /*first*/
         function displayFirst() {
-            first.style.display = "block";            
+            first.style.display = "block";
         }
         function revealFirst() {
             first.style.opacity = "1"
         }
         /*Second*/
         function displaySecond() {
-            second.style.display = "block";            
+            second.style.display = "block";
         }
         function revealSecond() {
             second.style.opacity = "1"
         }
         /*Third*/
         function displayThird() {
-            third.style.display = "block";            
+            third.style.display = "block";
         }
         function revealThird() {
             third.style.opacity = "1"
@@ -263,6 +269,10 @@
         }
         function displayNoneThird() {
             third.style.display = "none";
+        }
+
+        function scrollBack() {
+            scroll(0,0);
         }
     </script>
 </body>

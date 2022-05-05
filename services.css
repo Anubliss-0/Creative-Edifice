@@ -95,7 +95,7 @@ main {
     font-size: 7vw;
   }
   .service span:last-of-type {
-    font-size: 4vw;
+    font-size: 3vw;
   }
 }
 
@@ -104,6 +104,7 @@ main {
     transition: opacity 1s;
     margin-top: 5%;
     font-size: 1.5rem;  
+    color: var(--darkblue);
 }
 
 #first {
@@ -124,4 +125,29 @@ main {
 #title {
     text-align: center;
     transition: opacity 0.5s;
+    color: var(--darkblue);
+}
+
+#title h1 {
+  font-size: 2.5rem;
+}
+
+#title {
+  font-size: 1.5rem;
+}
+
+.back {
+  background-color: var(--navyBlue);
+    color: white;
+    width: 6.7222rem;
+    height: 2.1111rem;
+    border: 1px solid var(--navyBlue);
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+button:hover {
+  background-color: white;
+  color: var(--navyBlue);
+  
 }
