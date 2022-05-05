@@ -1,0 +1,32 @@
+main {
+    margin: 100px 10%;
+    font-size: 1.2rem;
+    color: var(--darkblue);
+}
+
+main li {
+    padding-left: 10px;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+.quote-background {
+    clip-path: polygon(0 9%, 100% 0, 100% 100%, 0% 100%);
+    position: absolute;
+    bottom: 0%;
+    z-index: 0;
+    height: 600px;
+    width: 100%;
+    background-color: #42B2B4;
+    z-index: -1;
+    
+  }
+
+  @media (max-width: 900px) {
+    .quote-background {
+        height: 33.3333rem;
+        bottom: 0%;
+      }
+  }

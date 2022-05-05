@@ -1,66 +1,183 @@
 <!DOCTYPE html>
-<html lang="en" lang="ned">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- HTML Meta Tags -->
-    <title>Creative Edifice - Under Construction</title>
-    <meta name="description" content="Under construction, Come back soon!" />
+<html lang="NL">
 
-    <!-- Google / Search Engine Tags -->
-    <meta itemprop="name" content="Creative Edifice - Under Construction" />
-    <meta
-      itemprop="description"
-      content="Under construction, Come back soon!"
-    />
-    <meta
-      itemprop="image"
-      content="https://creativeedifice.com/Assets/Logo.jpg"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="home.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <script src="https://kit.fontawesome.com/d30cb101d5.js" crossorigin="anonymous"></script>
 
-    <!-- Facebook Meta Tags -->
-    <meta property="og:url" content="https://creativeedifice.com" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Creative Edifice - Under Construction" />
-    <meta
-      property="og:description"
-      content="Under construction, Come back soon!"
-    />
-    <meta
-      property="og:image"
-      content="https://creativeedifice.com/Assets/Logo.jpg"
-    />
+  <!--Metadata beings here-->
+  <!-- HTML Meta Tags -->
+  <title>Creative Edifice</title>
+  <meta name="description"
+    content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
 
-    <!-- Twitter Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta
-      name="twitter:title"
-      content="Creative Edifice - Under Construction"
-    />
-    <meta
-      name="twitter:description"
-      content="Under construction, Come back soon!"
-    />
-    <meta
-      name="twitter:image"
-      content="https://creativeedifice.com/Assets/Logo.jpg"
-    />
+  <!-- Google / Search Engine Tags -->
+  <meta itemprop="name" content="Creative Edifice">
+  <meta itemprop="description"
+    content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
+  <meta itemprop="image"
+    content="https://raw.githubusercontent.com/Anubliss-0/Creative-Edifice/Development/Assets/Creative%20Edifice%20Logo%20COLOR.jpg">
 
-    <!-- Meta Tags Generated via http://heymeta.com -->
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://anubliss-0.github.io/Creative-Edifice">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Creative Edifice">
+  <meta property="og:description"
+    content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
+  <meta property="og:image"
+    content="https://raw.githubusercontent.com/Anubliss-0/Creative-Edifice/Development/Assets/Creative%20Edifice%20Logo%20COLOR.jpg">
 
-  <body>
-    <div class="container">
-      <img src="Assets/Logo.jpg" />
-      <h1>Under Construction / In Aanbouw</h1>
-      <p>Check back soon! / Kom snel terug!</p>
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Creative Edifice">
+  <meta name="twitter:description"
+    content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
+  <meta name="twitter:image"
+    content="https://raw.githubusercontent.com/Anubliss-0/Creative-Edifice/Development/Assets/Creative%20Edifice%20Logo%20COLOR.jpg">
+
+  <!-- Meta Tags Generated via http://heymeta.com -->
+</head>
+
+
+
+
+<body>
+  <nav>
+    <h2>Navigation</h2>
+    <div class="logo">
+      <img src="Assets/nav-logo.png">
     </div>
-  </body>
+    <div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fas fa-bars"></i>
+    </div>
+    </a>
+    <ul id="myLinks">
+      <li>Startpagina</li>
+      <li><a href="about.html">Over</a></li>
+      <li><a href="services.html">Diensten</a></li>
+      <li>Blog</li>
+      <li id="contact">Contact</li>
+    </ul>
+    <button>Contact mij</button>
+  </nav>
+  <div class="container">
+    <section class="hero">
+      <div class="text">
+        <h1>Ik help jouw groei te realiseren in jouw Maritieme organisatie</h1>
+        <p>
+          Samen plotten wij op jou kaart voor een behouden vaart naar het continent van jouw potentieel.
+        </p>
+        <a href="services.html"><button>Leer meer</button></a>
+      </div>
+      <div class="photo">
+        <img src="Assets\Hero_photo.png" />
+      </div>
+    </section>
+
+    <section id="grow">
+      <div class="growtext">
+        <h2>In enkele stappen een ideaal Reisvoorbereiding voor manifestatie</h2>
+        <span class="grow-span">In 4 stappen benaderen wij het algehele traject, elke onderdeel complimenteert de
+          ander!</span>
+      </div>
+      <div class="grow-grid">
+        <div class="grow-item grid1">
+          <span>Evaluatie</span>
+          <p>We beginnen met een kennismaking, hier bespreken we hoe de reis eruit zal zien. De verwachtingen en het
+            eindresultaat.</p>
+        </div>
+        <div class="grow-item grid2">
+          <span>Plannen</span>
+          <p>Hier gaan we een concreet, simpel en duidelijk routeplan maken. Voor vertrek bekijken we een gedetailleerd
+            risicoanalyse voor een behouden vaart.</p>
+        </div>
+        <div class="grow-item grid3">
+          <span>Uitvoering</span>
+          <p>Route is akkoord, motor loopt al warm. En we zijn onderweg, snelheid wordt gemonitord voor een ETA
+            (verwachte tijd aankomst).</p>
+        </div>
+
+        <div class="grow-item grid4">
+          <span>Monitoren</span>
+          <p>Met goed zeemanschap,letterlijk kijkend naar dat wat is (ont) dekt. Rekening houdend met weer en wind
+            trotseren we de deiningen. Tot slot een samenvatting en delen van geleerde ervaringen.</p>
+        </div>
+      </div>
+    </section>
+
+   
+
+
+
+    <section id="quote">
+      <div>
+        <img src="Assets/Footer Photo.png">
+      </div>
+      <div class="quote-container">
+        <p class="q1">Op een stille zee kan iedereen en stierman zijn!</p>
+        <p class="q2">pas in moeilijke situaties weet je wie er echt een goede leider is</p>
+        <p class="q3">Een schip op het strand is een baken in zee.</p>
+        <p class="q4">leer van de fouten die anderen maken Wie zee houdt wint de reis.</p>
+        <p class="q5">Als je maar door blijft zetten zul je uiteindelijk je doel bereiken.</p>
+        <p class="q6">Heer en Meester zijn op de oceaan, Situaltioneel Meesterschap.</p>
+      </div>
+    </section>
+  </div>
+
+  <div class="hero-background"></div>
+  <div class="quote-background"></div>
+
+  <footer>
+    <h2>footer</h2>
+    <div>
+      <h3>Contact</h3>
+      <a><p>contact opnemen</p></a>
+      <i class="fab fa-facebook-square"></i>
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-linkedin"></i>
+    </div>
+    <div>
+      <h3>Ontdek</h3>
+      <ul>
+        <a href="index.html"><li>Startpagina</li></a>
+        <a href="about.html"><li>Over</li></a>
+        <a href="services.html"><li>Diensten</li></a>
+        <li>Blog</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Taal</h3>
+      <ul>
+        <li>Nederlands</li>
+        <li>English</li>
+      </ul>
+    </div>
+    <div>
+      <img src="Assets/Creative Edifice Logos ALL_Tekengebied 1 kopie 10.png">
+    </div>
+  </footer>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    } 
+  </script>
+</body>
+
 </html>
